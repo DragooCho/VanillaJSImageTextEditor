@@ -1,1 +1,1 @@
-# -VanillaJS_ImageTextEditor
+# VanillaJS_ImageTextEditor
