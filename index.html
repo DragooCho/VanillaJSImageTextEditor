@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js" integrity="sha512-b/htz6gIyFi3dwSoZ0Uv3cuv3Ony7EeKkacgrcVg8CMzu90n777qveu0PBcbZUA7TzyENGtU+qZRuFAkfqgyoQ==" crossorigin="anonymous"></script>
-      
       <link rel="stylesheet" type="text/css" href="css/styles.css">
       <meta charset="UTF-8">
       <title>Image Text Editor</title>
     </head>
-    <body>   
+    <body> 
+      <div>
+        <canvas id="jsCanvas" class="canvas"></canvas>
+        <form>
+          <h2>문구</h2>
+          <input type="text" id="Text input" />
+  
+          <h2>폰트</h2>
+          <select id="font">
+            <option value="hanna">한나체</option>
+            <option value="gungSeo">궁서체</option>
+            <option value="handle">손글씨</option>
+            <option value="barTang">바탕체</option>
+          </select>
+  
+          <h2>글씨색</h2>
+          <select id="fontColor">
+            <option value="white">흰색</option>
+            <option value="pink">분홍</option>
+            <option value="blue">파랑</option>
+            <option value="black">검정</option>
+          </select>
+  
+          <h2>글씨크기</h2>
+          <div className="fontSize">
+            <input type="submit" value="작게"></input>
+            <input type="submit" value="크게"></input>
+            <input type="submit" value="초기화"></input>
+          </div>
+  
+          <h2>효과</h2>
+          <select id="effect">
+            <option value="noEffect">효과없음</option>
+            <option value="right">왼쪽➡오른쪽</option>
+            <option value="left">오른쪽➡왼쪽</option>
+          </select>
+          <h2>움직임 속도</h2>
+          <select id="speed">
+            <option value="slow">느리게</option>
+            <option value="normal" selected>
+              보통
+            </option>
+            <option value="fast">빠르게</option>
+          </select>
+  
+          <p>문구 위치를 드래그(손이나 마우스로!)로 수정하실 수 있어요!</p>
+          <input type="submit" onClick={greetings} value="만들기"></input>
+        </form>
+      </div>  
       <script src="canvasMain.js"></script>
     </body>
 </html>
