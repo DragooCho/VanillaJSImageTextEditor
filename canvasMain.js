@@ -28,6 +28,7 @@ function mouseDownHandler(e) {
   ctx.fillStyle = "red";
   ctx.font = "28px georgia";
   ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
 }
 
