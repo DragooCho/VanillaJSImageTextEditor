@@ -25,8 +25,8 @@ function imageInputUpload(e) {
 }
 
 function mouseDownHandler(e) {
-  ctx.fillStyle = "red";
-  ctx.font = "28px georgia";
+  ctx.fillStyle = "blue";
+  ctx.font = "28px LAB디지털";
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
