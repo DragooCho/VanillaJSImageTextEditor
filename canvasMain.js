@@ -17,7 +17,6 @@ function imageInputUpload(e) {
       img.src = event.target.result;
     };
     reader.readAsDataURL(e.target.files[0]);
-    alert(img.src);
   } else {
     alert("이미지 파일이 아님니다.");
   }
