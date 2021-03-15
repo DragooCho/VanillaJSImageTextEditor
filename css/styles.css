@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Binggrae-Bold", "SDSamliphopangche_Outline";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gugi", cursive;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://source.unsplash.com/1600x900/?cat");
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  background-size: cover;
+}
+
+canvas {
+  display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-radius: 10px;
+  border: 5px solid rgb(61, 61, 61);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Title text */
+
+#titleSide {
+  padding: 20px;
+}
+
+.bigTitle {
+  width: 500px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+
+.middleTitle {
+  width: 500px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-size: 30px;
+  padding: 0 0 0 110px;
+  border-radius: 20px 20px 0 0;
+}
+
+.middleTitlePhrases {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-size: 30px;
+  padding: 0px 200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.fontSizeHandle,
+.midTitleFontType,
+.midTitleColor {
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-size: 30px;
+  padding: 0 0 0 130px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid rgb(124, 124, 124);
+}
+
+.midTitleColor {
+  padding: 0 0 0 183px;
+}
+
+.middleTitleSaveAs {
+  width: 500px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-size: 20px;
+  padding: 0px 20px 70px 50px;
+  border-radius: 25px;
+  border: 1px solid rgb(124, 124, 124);
+  margin-bottom: 60px;
+}
+/*  */
+
+/* select option */
+
+select {
+  width: 500px;
+  margin-bottom: 20px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-size: 30px;
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+}
+
+.colorDropdown {
+  padding: 20px 0 20px 205px;
+}
+/*  */
+
+/* slider */
+
+.fontSizeHandle {
+  width: 500px;
+  font-size: 30px;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-style: normal;
+  padding: 5px 50px 50px 150px;
+  border-radius: 20px;
+  margin-bottom: -60px;
+}
+
+.textSizeSlider {
+  width: 400px;
+  cursor: grab;
+}
+/*  */
+
+/* input text */
+
+input {
+  margin: 0px;
+  padding: 0px 20px;
+  border-width: 7px;
+  height: 57px;
+  font-size: 30px;
+  width: 500px;
+  margin-bottom: 20px;
+  border-radius: 0 0 20px 20px;
+}
+/*  */
+
+/* button */
+
+button {
+  color: rgb(214, 214, 214);
+  font-size: 24px;
+  padding: 16px;
+  text-shadow: 0px 3px 0px rgba(37, 0, 0, 0.62);
+  -webkit-border-radius: 65px;
+  -moz-border-radius: 65px;
+  border-radius: 65px;
+  background: rgb(67, 20, 237);
+  background: linear-gradient(
+    0deg,
+    rgb(67, 20, 237) 30%,
+    rgb(74, 133, 255) 77%
+  );
+  box-shadow: 0px 9px 6px rgba(50, 50, 50, 0.91);
+  margin-top: -130px;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.imageUploadButton {
+  width: 500px;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.445);
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+
+.imageUploadButton,
+button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
