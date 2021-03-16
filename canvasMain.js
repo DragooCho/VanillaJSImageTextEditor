@@ -27,7 +27,7 @@ function imageInputUpload(e) {
 function mouseDownHandler(e) {
   ctx.fillStyle = `${textColorValue}`;
   ctx.textAlign = "center";
-  ctx.textBaseline = "Alphabetic";
+  ctx.textBaseline = "middle";
   ctx.font = `${textSizeValue}px ${fontStyleValue}`;
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
 }
