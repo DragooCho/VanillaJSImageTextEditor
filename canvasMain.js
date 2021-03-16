@@ -25,10 +25,10 @@ function imageInputUpload(e) {
 }
 
 function mouseDownHandler(e) {
-  ctx.fillStyle = "blue";
-  ctx.font = "28px LAB디지털";
+  ctx.fillStyle = `${textColorValue}`;
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
+  ctx.font = `${textSizeValue}px ${fontStyleValue}`;
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
 }
 
@@ -36,3 +36,32 @@ function textInputHandler(e) {
   e.preventDefault();
   textInputValue.value = e.target.value;
 }
+
+////////////////////////////
+const optionSelectFont = document.getElementById("optionSelectFont");
+optionSelectFont.addEventListener("change", fontTypeInputHandler);
+let fontStyleValue = optionSelectFont.value;
+
+function fontTypeInputHandler(e) {
+  fontStyleValue = e.target.value;
+}
+
+//////////////////////////////////
+const selectTextColor = document.getElementById("selectTextColor");
+selectTextColor.addEventListener("change", textColorInputHandler);
+let textColorValue = selectTextColor.value;
+
+function textColorInputHandler(e) {
+  textColorValue = e.target.value;
+}
+
+/////////////////////////
+const textSizeSlider = document.getElementById("myRange");
+const output = document.getElementById("demo");
+let textSizeValue = textSizeSlider.value;
+output.innerHTML = textSizeSlider.value;
+
+textSizeSlider.oninput = function () {
+  output.innerHTML = this.value;
+  textSizeValue = this.value;
+};
