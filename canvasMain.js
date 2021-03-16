@@ -27,7 +27,7 @@ function imageInputUpload(e) {
 function mouseDownHandler(e) {
   ctx.fillStyle = `${textColorValue}`;
   ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
+  ctx.textBaseline = "Alphabetic";
   ctx.font = `${textSizeValue}px ${fontStyleValue}`;
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
 }
@@ -42,8 +42,9 @@ const optionSelectFont = document.getElementById("optionSelectFont");
 optionSelectFont.addEventListener("change", fontTypeInputHandler);
 let fontStyleValue = optionSelectFont.value;
 
-async function fontTypeInputHandler(e) {
-  fontStyleValue = await e.target.value;
+function fontTypeInputHandler(e) {
+  e.preventDefault();
+  fontStyleValue = e.target.value;
 }
 
 //////////////////////////////////
