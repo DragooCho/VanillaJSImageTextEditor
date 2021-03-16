@@ -6,7 +6,7 @@
       <title>Image Text Editor</title>
     </head>
     <body> 
-      <span class='appBox'>
+      <div class='appBox'>
         <canvas id="jsCanvas" class="canvas" width='500' height='500'></canvas>
         <container class="operation_container">
           <form>
@@ -33,7 +33,7 @@
             </select>
     
             <div class="slidecontainer">
-              <h2>글씨크기: <span id="demo"></span></h2>
+              <h2>글씨크기: <span id="sizeValueTachometer"></span></h2>
               <input type="range" min="10" max="100" value="20" class="slider" id="myRange">
             </div>
             <p>문구 위치를 마우스클릭으로 조정하실 수 있어요!</p>
@@ -43,7 +43,7 @@
 
           </form>
         </container>  
-      </span> 
+      </div> 
       <script src="canvasMain.js"></script>
     </body>
 </html>

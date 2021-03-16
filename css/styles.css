@@ -38,8 +38,7 @@ body {
 
 .appBox {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
 }
 
 .canvas {

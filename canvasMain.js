@@ -58,12 +58,12 @@ function textColorInputHandler(e) {
 
 /////////////////////////
 const textSizeSlider = document.getElementById("myRange");
-const output = document.getElementById("demo");
+const Tachometer = document.getElementById("sizeValueTachometer");
 let textSizeValue = textSizeSlider.value;
-output.innerHTML = textSizeSlider.value;
+Tachometer.innerHTML = textSizeSlider.value;
 
 textSizeSlider.oninput = function () {
-  output.innerHTML = this.value;
+  Tachometer.innerHTML = this.value;
   textSizeValue = this.value;
 };
 
