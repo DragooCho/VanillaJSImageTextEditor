@@ -10,37 +10,42 @@
         <canvas id="jsCanvas" class="canvas" width='500' height='500'></canvas>
         <container class="operation_container">
           <form>
-            <h2>문구</h2>
-            <input type="text" id="textInputValue" />
-  
-            <h2>파일 불러오기</h2>
-            <input type="file" id="fileInputBtn" name="imageInputUpload" accept="image/*">
-    
-            <h2>폰트</h2>
-            <select id="optionSelectFont">
-              <option value="Eulyoo1945-Regular">을유1945 SemiBold</option>
-              <option value="BMEuljiro10yearslater">배민 을지로10년후체</option>
-              <option value="SDSamliphopangche_Outline">산돌 삼립호빵체 Outline</option>
-              <option value="LAB디지털">LAB디지털</option>
-            </select>
-    
-            <h2>글씨색</h2>
-            <select id="selectTextColor">
-              <option value="black">검정</option>
-              <option value="white">흰색</option>
-              <option value="pink">분홍</option>
-              <option value="blue">파랑</option>
-            </select>
-    
-            <div class="slidecontainer">
-              <h2>글씨크기: <span id="sizeValueTachometer"></span></h2>
-              <input type="range" min="10" max="100" value="20" class="slider" id="myRange">
-            </div>
-            <p>문구 위치를 마우스클릭으로 조정하실 수 있어요!</p>
-            
-            <button onclick="createDownloadImg()">이미지로 가져오기</button>
-            
-
+            <aside>
+              <h2>문구</h2>
+              <input type="text" id="textInputValue" />
+            </aside>
+            <aside>
+              <h2>파일 불러오기</h2>
+              <input type="file" id="fileInputBtn" name="imageInputUpload" accept="image/*">
+            </aside>
+            <aside>
+              <h2>폰트</h2>
+              <select id="optionSelectFont">
+                <option value="Eulyoo1945-Regular">을유1945 SemiBold</option>
+                <option value="BMEuljiro10yearslater">배민 을지로10년후체</option>
+                <option value="SDSamliphopangche_Outline">산돌 삼립호빵체 Outline</option>
+                <option value="LAB디지털">LAB디지털</option>
+              </select>
+            </aside>
+            <aside>
+              <h2>글씨색</h2>
+              <select id="selectTextColor">
+                <option value="black">검정</option>
+                <option value="white">흰색</option>
+                <option value="pink">분홍</option>
+                <option value="blue">파랑</option>
+              </select>
+            </aside>
+            <aside>
+              <div class="slidecontainer">
+                <h2>글씨크기: <span id="sizeValueTachometer"></span></h2>
+                <input type="range" min="10" max="100" value="20" class="slider" id="myRange">
+              </div>
+            </aside>
+            <aside>
+              <p>문구 위치를 마우스클릭으로 조정하실 수 있어요!</p>
+              <button onclick="createDownloadImg()">이미지로 가져오기</button>
+            </aside>
           </form>
         </container>  
       </div> 

@@ -7,8 +7,6 @@ fileInputBtn.addEventListener("change", imageInputUpload);
 const textInputValue = document.getElementById("textInputValue");
 textInputValue.addEventListener("change", textInputHandler);
 
-canvas.addEventListener("mousedown", mouseDownHandler, false);
-
 function imageInputUpload(e) {
   let reader = new FileReader();
   let img = new Image();
@@ -24,17 +22,21 @@ function imageInputUpload(e) {
   reader.readAsDataURL(e.target.files[0]);
 }
 
-function mouseDownHandler(e) {
+function textInputHandler(e) {
+  e.preventDefault();
+  textInputValue.value = e.target.value;
+}
+
+/////////////////////////////////////////////////
+
+canvas.addEventListener("mousedown", mouseOverHandler, false);
+
+function mouseOverHandler(e) {
   ctx.fillStyle = `${textColorValue}`;
   ctx.textAlign = "center";
   ctx.textBaseline = "middle";
   ctx.font = `${textSizeValue}px ${fontStyleValue}`;
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
-}
-
-function textInputHandler(e) {
-  e.preventDefault();
-  textInputValue.value = e.target.value;
 }
 
 ////////////////////////////
@@ -66,6 +68,22 @@ textSizeSlider.oninput = function () {
   Tachometer.innerHTML = this.value;
   textSizeValue = this.value;
 };
+
+// let createDownloadImg = () => {
+//   canvas.toBlob(
+//     (blob) => {
+//       const anchor = document.createElement("a");
+//       anchor.download = "my-file-name.png";
+//       anchor.href = URL.createObjectURL(blob);
+
+//       anchor.click();
+
+//       URL.revokeObjectURL(anchor.href);
+//     },
+//     "image/png",
+//     0.9
+//   );
+// };
 
 const createDownloadImg = () => {
   let dataURL = canvas.toDataURL("image/png");
