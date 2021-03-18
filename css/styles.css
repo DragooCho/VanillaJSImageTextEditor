@@ -69,6 +69,7 @@ aside .slider {
   background: rgb(153, 168, 236);
   cursor: pointer;
   border-radius: 6px;
+  border: 1px solid rgba(78, 78, 78, 0.479);
   transition: background 450ms ease-in;
 }
 
