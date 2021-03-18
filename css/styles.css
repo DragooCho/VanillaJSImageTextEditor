@@ -61,3 +61,17 @@ aside h2 {
 aside .btnManualTitle {
   font-size: 20px;
 }
+
+aside .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #a3a3a3;
+  cursor: pointer;
+  border-radius: 6px; /* iOS */
+  transition: background 450ms ease-in;
+}
+
+aside .slider:focus {
+  outline: none;
+}
