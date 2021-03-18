@@ -7,9 +7,10 @@
     </head>
     <body> 
       <div class='appBox'>
-        <canvas id="jsCanvas" class="canvas" width='500' height='580'>
-          <!-- <p>파일선택을 눌러 이미지를 불러오세요. 문구에 원하는 텍스트를 넣고 캔버스 안에 마우스로 꼭 찍어 넣으세요.</p> -->
-        </canvas>
+        <header>
+          <h1>🔹웹툴🔹이미지 텍스트 편집기 ver3️⃣</h1>
+        </header>
+        <canvas id="jsCanvas" class="canvas" width='500' height='619'></canvas>
         <container class="operation_container">
           <form>
             <aside>
@@ -23,16 +24,16 @@
             <aside>
               <h2>폰트</h2>
               <select id="optionSelectFont">
-                <option value="Eulyoo1945-Regular">을유1945 SemiBold</option>
+                <option value="Eulyoo1945-Regular">을유1945 SemiBold </option>
                 <option value="BMEuljiro10yearslater">배민 을지로10년후체</option>
-                <option value="SDSamliphopangche_Outline">산돌 삼립호빵체 Outline</option>
+                <option value="SDSamliphopangche_Outline" selected>산돌 삼립호빵체 Outline</option>
                 <option value="LAB디지털">LAB디지털</option>
               </select>
             </aside>
             <aside>
               <h2>글씨색</h2>
               <select id="selectTextColor">
-                <option value="black">검정</option>
+                <option value="black" selected>검정</option>
                 <option value="white">흰색</option>
                 <option value="pink">분홍</option>
                 <option value="blue">파랑</option>
@@ -45,12 +46,20 @@
               </div>
             </aside>
             <aside>
-              <p>문구 위치를 마우스클릭으로 조정하실 수 있어요!</p>
+              <h2 class='btnManualTitle'>문구 위치를 마우스클릭으로</h2> 
+              <h2 class='btnManualTitle'>조정할 수 있어요!</h2>
               <button onclick="createDownloadImg()">이미지로 가져오기</button>
             </aside>
           </form>
         </container>  
       </div> 
-      <script src="canvasMain.js"></script>
+      <script src="js_Feature_set/canvasMain.js"></script>
+      <script src="js_Feature_set/canvasManualText.js"></script>
+      <script src="js_Feature_set/text input window.js"></script>
+      <script src="js_Feature_set/ImageUploadZone.js"></script>
+      <script src="js_Feature_set/FontTypeSelecter.js"></script>
+      <script src="js_Feature_set/TextColorSelecter.js"></script>
+      <script src="js_Feature_set/textSizeHandler.js"></script>
+      <script src="js_Feature_set/ImgDownloader.js"></script>
     </body>
 </html>
