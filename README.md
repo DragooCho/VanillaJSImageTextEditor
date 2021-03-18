@@ -51,6 +51,12 @@
 <br />
 <br />
 
+## DEMO
+https://dragoocho.github.io/VanillaJSImageTextEditor/
+
+<br />
+<br />
+
 ## ver2.1 변경점
 
 1. 세로로 보기에 최적화됬던 홈페이지 디자인을 가로 중심의 디자인으로 변경했습니다.
