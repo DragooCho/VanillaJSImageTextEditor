@@ -64,8 +64,8 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 3. 유지보수를 간편화를 위해 JS파일을 조작기능별로 나누어 컴포넌트화 했습니다. 
 4. 이미지 폭의 백분율 계산을 이용해 대입한 결과 이미지 파일을 업로드시에  
    원본의 비율을 유지하면서 가져올 수 있게 했습니다.
-  ``` js
-img.onload = function () {
+   ``` js
+    img.onload = function () { 
       // 이미지 로딩이 완료되면 실행되는 함수
       imgX = img.width;
       imgY = img.height;
