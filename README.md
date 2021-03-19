@@ -1,4 +1,4 @@
-# 🔹웹툴🔹 이미지 텍스트 편집기 ver2.1
+# 🔹웹툴🔹 이미지 텍스트 편집기 ver 2.1
 
 >https://github.com/DragooCho/ImageTextEditor        
  p5js로 구현했던 **이미지 텍스트 편집기**를 순수 자바스크립트로 재구현 했습니다.
