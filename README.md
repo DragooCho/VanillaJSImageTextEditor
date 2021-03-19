@@ -77,7 +77,7 @@ img.onload = function () {
       canvas.height = img.height;
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     };
-   
+   ```
 
 
 5. font-display: swap 속성을 추가해 웹페이지 내에서   
