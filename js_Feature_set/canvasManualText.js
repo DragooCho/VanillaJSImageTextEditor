@@ -1,7 +1,7 @@
-const manualTextAllX = 0;
+const manualTextAllX = 30;
 const manualTextAllY = 0;
-const smallParagraphSpacing = -15;
-const manualTextSize = 17;
+const smallParagraphSpacing = -5;
+const manualTextSize = 20;
 const manualTextColor = "rgba(0, 0, 0)";
 
 const manualTextLine1 = "1. 문구에 텍스트를 작성하세요.";
