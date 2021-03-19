@@ -89,7 +89,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
         format("woff");
       font-weight: normal;
       font-style: normal;
-      font-display: swap;
+      font-display: swap;  // FOUT와 동일하게 작동시켜준다.
     }
 
  
