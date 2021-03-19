@@ -84,12 +84,12 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    웹 폰트 로딩 여부와 관계없이 항상 텍스트가 보이게 했습니다. 
    ``` css
     @font-face {
-    font-family: "Eulyoo1945-Regular";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+      font-family: "Eulyoo1945-Regular";
+      src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff")
+        format("woff");
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
     }
 
  
