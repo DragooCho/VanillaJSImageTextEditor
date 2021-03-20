@@ -4,4 +4,5 @@ let fontStyleValue = optionSelectFont.value;
 
 function fontTypeInputHandler(e) {
   fontStyleValue = e.target.value;
+  console.log(optionSelectFont.value);
 }

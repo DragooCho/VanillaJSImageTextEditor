@@ -60,8 +60,38 @@ aside {
 
 aside h2 {
   margin-bottom: 10px;
-  font-family: "SDSamliphopangche_Outline";
+  font-family: "SDSamliphopangche_Basic";
+  font-weight: normal;
   font-size: 30px;
+}
+
+aside #optionSelectFont :nth-child(1) {
+  font-family: "Eulyoo1945-Regular";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(2) {
+  font-family: "BMEuljiro10yearslater";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(3) {
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(4) {
+  font-family: "SDSamliphopangche_Basic";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(5) {
+  font-family: "LAB디지털";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(6) {
+  font-family: "ELAND_Choice_B";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(7) {
+  font-family: "ELAND_Nice_M";
+  font-weight: normal;
 }
 
 aside .btnManualTitle {
