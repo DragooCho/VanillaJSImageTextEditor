@@ -1,4 +1,4 @@
-# 🔹웹툴🔹 이미지 텍스트 편집기 ver 2.1
+# 🔹웹툴🔹 이미지 텍스트 편집기 ver 2.5
 
 >https://github.com/DragooCho/ImageTextEditor        
  p5js로 구현했던 **이미지 텍스트 편집기**를 순수 자바스크립트로 재구현 했습니다.
@@ -93,6 +93,25 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       font-style: normal;
       font-display: swap;  // FOUT와 동일하게 작동시켜준다.
     }
+
+6. 폰트타입 옵션값이 매개변수를 전달했어도 캔버스에 한번 그리면 적용이 안되고 2번째로 다시 그려야 바뀐 폰트체가 적용되었던 오류를 고쳤습니다.
+   ``` css
+    aside #optionSelectFont :nth-child(1) {
+      font-family: "Eulyoo1945-Regular";
+      font-weight: normal; // 각 노드에 폰트스타일링으로 해결.
+    }
+    aside #optionSelectFont :nth-child(2) {
+      font-family: "BMEuljiro10yearslater";
+      font-weight: normal; 
+    }
+    aside #optionSelectFont :nth-child(3) {
+      font-family: "SDSamliphopangche_Outline";
+      font-weight: normal;
+    } 
+    .
+    .
+    .
+
 
  
 
