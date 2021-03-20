@@ -18,7 +18,7 @@ const manualTextLine5N1 = "5. 텍스트를 원하는 위치에 마우스 클릭�
 const manualTextLine5N2 = "'이미지로 가져오기' 버튼을 눌러 저장하세요.";
 
 ctx.fillStyle = manualTextColor;
-ctx.font = `800 ${manualTextSize}px GulimChe`;
+ctx.font = `800 ${manualTextSize}px NOMAL`;
 
 ctx.fillText(manualTextLine1, 20 + manualTextAllX, 100 + manualTextAllY);
 

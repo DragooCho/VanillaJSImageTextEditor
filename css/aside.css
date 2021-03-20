@@ -1,0 +1,72 @@
+.operation_container {
+  margin-left: 20px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.658);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+aside h2 {
+  margin-bottom: 10px;
+  font-family: "SDSamliphopangche_Basic";
+  font-weight: normal;
+  font-size: 30px;
+}
+
+aside #optionSelectFont :nth-child(1) {
+  font-family: "Eulyoo1945-Regular";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(2) {
+  font-family: "BMEuljiro10yearslater";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(3) {
+  font-family: "SDSamliphopangche_Outline";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(4) {
+  font-family: "SDSamliphopangche_Basic";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(5) {
+  font-family: "LAB디지털";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(6) {
+  font-family: "ELAND_Choice_B";
+  font-weight: normal;
+}
+aside #optionSelectFont :nth-child(7) {
+  font-family: "ELAND_Nice_M";
+  font-weight: normal;
+}
+
+aside .btnManualTitle {
+  font-size: 20px;
+}
+
+aside .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  background: rgb(153, 168, 236);
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid rgba(78, 78, 78, 0.479);
+  transition: background 450ms ease-in;
+}
+
+aside .slider:focus {
+  outline: none;
+}
+aside button {
+  cursor: pointer;
+}
