@@ -43,7 +43,3 @@ header h1 {
   display: inline-flex;
   vertical-align: top;
 }
-
-#mouseTextMove {
-  position: absolute;
-}
