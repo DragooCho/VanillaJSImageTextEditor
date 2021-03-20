@@ -58,7 +58,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 <br />
 
-## 7. ver 2.1 변경점 🛠
+## 7. ver 2.5 변경점 🛠
 
 1. 세로보기에 최적화한 홈페이지 디자인을 **가로 중심의 디자인**으로 변경했습니다.
 2. 라이브러리 없는 코드를 사용해 웹페이지를 좀 더 **최적화**했습니다.
