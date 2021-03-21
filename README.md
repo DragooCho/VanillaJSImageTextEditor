@@ -1,5 +1,7 @@
 # 🔹웹툴🔹 이미지 텍스트 편집기 ver 2.5
 
+![Image Text Editor](https://github.com/DragooCho/TIL/blob/main/image/jjalbang18.gif?raw=true)
+
 >https://github.com/DragooCho/ImageTextEditor        
  p5js로 구현했던 **이미지 텍스트 편집기**를 순수 자바스크립트로 재구현 했습니다.
 
@@ -14,7 +16,7 @@
 ## 2. 사용 기술 📱
 #### `Front-end`
   - **javascript** 
-  - **HtML5canvas**
+  - **HML5canvas**
 
 <br />
 
@@ -95,7 +97,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       font-display: swap;  // FOUT와 동일하게 작동시켜준다.
     }
 
-6. 폰트타입 옵션값이 매개변수를 전달했어도 캔버스에   
+6. 폰트타입 옵션값을 매개변수를 전달했어도 캔버스에   
  한 번 그리면 적용이 안되고 2번째로 다시 그려야   
   바뀐 폰트체가 적용되었던 오류를 고쳤습니다.
    ``` css
