@@ -67,6 +67,8 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 2. 라이브러리 없는 코드를 사용해 웹페이지를 좀 더 **최적화**했습니다.
 3. 유지보수를 간편화를 위해 **JS파일과 css파일들을 조작 기능별로 나누어 컴포넌트화** 했습니다.
   ```
+  File Tree
+  
    📂css
    ┣ 📜aside.css
    ┣ 📜fontFace.css
@@ -87,13 +89,15 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
    큰 이미지파일을 불려올 때 매뉴조작박스가 **구석으로 가거나 사라지는 현상을 방지**했습니다. 
    ``` js
+   // ImageUploadZone.js
+   
     img.onload = function () { 
       // 이미지 로딩이 완료되면 실행되는 함수
       imgX = img.width;
       imgY = img.height;
 
-      img.height = 600 * ((imgY * 100) / imgX / 100); 
-      img.width = 600; // 이미지 폭에 백분율 계산으로 리사이즈를 구현
+      img.height = 600 * ((imgY * 100) / imgX / 100); // 이미지 폭에 백분율 계산으로 리사이즈를 구현
+      img.width = 600; 
 
       canvas.width = img.width;
       canvas.height = img.height;
@@ -105,6 +109,8 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 5. font-display: `swap` 속성을 추가해 웹페이지 내에서   
    웹 폰트 로딩 여부와 관계없이 항상 텍스트가 보이게 했습니다. 
    ``` css
+   // fontFace.css
+   
     @font-face {
       font-family: "Eulyoo1945-Regular";
       src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/Eulyoo1945-Regular.woff")
@@ -118,9 +124,11 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
  한 번 그리면 적용이 안되고 2번째로 다시 그려야   
   바뀐 폰트체가 적용되었던 오류를 고쳤습니다.
    ``` css
+   // aside.css
+   
     aside #optionSelectFont :nth-child(1) {
-      font-family: "Eulyoo1945-Regular";
-      font-weight: normal; // 각 노드에 폰트스타일링으로 해결.
+      font-family: "Eulyoo1945-Regular"; // 각 노드에 폰트스타일링으로 해결.
+      font-weight: normal; 
     }
     aside #optionSelectFont :nth-child(2) {
       font-family: "BMEuljiro10yearslater";
