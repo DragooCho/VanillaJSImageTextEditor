@@ -65,7 +65,24 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 
 1. 세로보기에 최적화한 홈페이지 디자인을 **가로 중심의 디자인**으로 변경했습니다.
 2. 라이브러리 없는 코드를 사용해 웹페이지를 좀 더 **최적화**했습니다.
-3. 유지보수를 간편화를 위해 **JS파일을 조작 기능별로 나누어 컴포넌트화** 했습니다. 
+3. 유지보수를 간편화를 위해 **JS파일을 조작 기능별로 나누어 컴포넌트화** 했습니다.
+  ```
+   📂css
+   ┣ 📜aside.css
+   ┣ 📜fontFace.css
+   ┣ 📜reset.css
+   ┗ 📜styles.css
+   📂js_Feature_set
+   ┣ 📜canvasMain.js
+   ┣ 📜canvasManualText.js
+   ┣ 📜FontTypeSelecter.js
+   ┣ 📜ImageUploadZone.js
+   ┣ 📜ImgDownloader.js
+   ┣ 📜text input window.js
+   ┣ 📜TextColorSelecter.js
+   ┗ 📜textSizeHandler.js 
+  ```
+
 4. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
    큰 이미지파일을 불려올 때 매뉴조작박스가 **구석으로 가거나 사라지는 현상을 방지**했습니다. 
