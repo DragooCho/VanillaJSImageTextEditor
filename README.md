@@ -97,6 +97,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    ┣ 📜TextColorSelecter.js
    ┗ 📜textSizeHandler.js 
   ```
+<br />
 
 4. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
@@ -117,6 +118,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     };
    ```
+<br />
 
 
 5. font-display: `swap` 속성을 추가해 웹페이지 내에서   
@@ -132,6 +134,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       font-style: normal;
       font-display: swap;  // FOUT와 동일하게 작동시켜준다.
     }
+<br />
 
 6. 폰트타입 옵션값을 매개변수를 전달했어도 캔버스에   
  한 번 그리면 적용이 안되고 2번째로 다시 그려야   
