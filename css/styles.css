@@ -38,8 +38,9 @@ header h1 {
   vertical-align: top;
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 920px) {
   .appBox {
+    background-color: brown;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
