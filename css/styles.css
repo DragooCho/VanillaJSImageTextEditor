@@ -40,7 +40,6 @@ header h1 {
 
 @media screen and (max-width: 920px) {
   .appBox {
-    background-color: brown;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
