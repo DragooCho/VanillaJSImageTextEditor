@@ -3,7 +3,6 @@
 @import "aside.css";
 
 body {
-  width: 100%;
   background-color: #f6f9fc;
   background-image: url("https://source.unsplash.com/1600x900/?cat");
   background-position: center;
@@ -37,4 +36,12 @@ header h1 {
 .operation_container {
   display: inline-flex;
   vertical-align: top;
+}
+
+@media screen and (max-width: 645px) {
+  .appBox {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
 }
