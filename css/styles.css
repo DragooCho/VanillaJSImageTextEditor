@@ -3,6 +3,7 @@
 @import "aside.css";
 
 body {
+  width: 100%;
   background-color: #f6f9fc;
   background-image: url("https://source.unsplash.com/1600x900/?cat");
   background-position: center;
