@@ -129,7 +129,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    // aside.css
    
     aside #optionSelectFont :nth-child(1) {
-      font-family: "Eulyoo1945-Regular"; // 각 노드에 폰트스타일링으로 해결.
+      font-family: "Eulyoo1945-Regular"; // 노드에 직접 폰트스타일링으로 해결.
       font-weight: normal; 
     }
     aside #optionSelectFont :nth-child(2) {
