@@ -1,4 +1,4 @@
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 1025px) {
   .appBox {
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(2, 1fr);
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 1026px) {
   .appBox {
     grid-template-areas:
       "header header"
