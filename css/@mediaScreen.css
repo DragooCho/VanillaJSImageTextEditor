@@ -1,9 +1,7 @@
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 979px) {
   .appBox {
     grid-template-columns: 1fr;
     grid-template-rows: 50px repeat(2, 1fr);
-    /* repeat는 반복되는 값을 자동으로 처리할 수 있는 함수 */
-    /* repeat(반복횟수, 반복값) */
   }
   .canvas {
     justify-self: center;
@@ -18,7 +16,7 @@
   }
 }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 980px) {
   .appBox {
     grid-template-areas:
       "header header"

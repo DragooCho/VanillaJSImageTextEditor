@@ -14,7 +14,7 @@ body {
 }
 
 .appBox {
-  margin-top: vh;
+  margin-top: 5vh;
   display: grid;
   gap: 20px;
 }
