@@ -1,6 +1,7 @@
 @import "fontFace.css";
 @import "reset.css";
 @import "aside.css";
+@import "@mediaScreen.css";
 
 body {
   background-color: #f6f9fc;
@@ -16,51 +17,6 @@ body {
   margin-top: vh;
   display: grid;
   gap: 20px;
-}
-
-@media screen and (max-width: 1025px) {
-  .appBox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px repeat(2, 1fr);
-    /* repeat는 반복되는 값을 자동으로 처리할 수 있는 함수 */
-    /* repeat(반복횟수, 반복값) */
-  }
-  .canvas {
-    justify-self: center;
-  }
-  aside {
-    width: 570px;
-    height: 80px;
-  }
-
-  .operation_container {
-    justify-self: center;
-  }
-}
-
-@media screen and (min-width: 1026px) {
-  .appBox {
-    grid-template-areas:
-      "header header"
-      "canvas aside";
-
-    gap: 20px;
-  }
-  .operation_container {
-    grid-area: aside;
-  }
-
-  header {
-    grid-area: header;
-  }
-  .canvas {
-    grid-area: canvas;
-    justify-self: end;
-  }
-  aside {
-    width: 300px;
-    height: 80px;
-  }
 }
 
 header h1 {
