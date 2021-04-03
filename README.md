@@ -146,8 +146,10 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
      40 + manualTextAllX,
      460 + manualTextAllY + smallParagraphSpacing
    );
-  ``` 
+
+   ``` 
 <br />
+
 
 5. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
