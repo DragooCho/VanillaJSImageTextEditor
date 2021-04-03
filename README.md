@@ -100,7 +100,8 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 
 4. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
-   X축, Y축, 문단, Text Size, Text Color 등등 대부분 전역변수화 시켰습니다.    
+   X축, Y축, 문단, Text Size, Text Color 등등 대부분 전역변수화 시켰습니다.
+
    ```js
    const manualTextAllX = 30;
    const manualTextAllY = 0;
@@ -145,12 +146,13 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
      40 + manualTextAllX,
      460 + manualTextAllY + smallParagraphSpacing
    );
-``` 
-
+  ``` 
+<br />
 
 5. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
-   큰 이미지파일을 불려올 때 매뉴조작박스가 **구석으로 가거나 사라지는 현상을 방지**했습니다. 
+   큰 이미지파일을 불려올 때 매뉴조작박스가 **구석으로 가거나 사라지는 현상을 방지**했습니다.
+
    ``` js
    // ImageUploadZone.js
    
@@ -166,11 +168,12 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       canvas.height = img.height;
       ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     };
+
    ```
+
 <br />
 
-
-5. font-display: `swap` 속성을 추가해 웹페이지 내에서   
+6. font-display: `swap` 속성을 추가해 웹페이지 내에서   
    웹 폰트 로딩 여부와 관계없이 항상 텍스트가 보이게 했습니다. 
    ``` css
    // fontFace.css
@@ -183,9 +186,10 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
       font-style: normal;
       font-display: swap;  // FOUT와 동일하게 작동시켜준다.
     }
+
 <br />
 
-6. 폰트타입 옵션값을 매개변수를 전달했어도 캔버스에 한 번 그리면     
+7. 폰트타입 옵션값을 매개변수를 전달했어도 캔버스에 한 번 그리면     
 적용이 안되고 2번째로 다시 그려야 바뀐 폰트체가 적용되었던 오류를 고쳤습니다.
    ``` css
    // aside.css
@@ -208,7 +212,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 
 <br />
 
-7. 대부분의 모바일 기기에서도 조작을 용이하게 하기 위해   
+8. 대부분의 모바일 기기에서도 조작을 용이하게 하기 위해   
  웹반응형을 적용시켰습니다. width 수치가 980px보다 적게   
 미디어쿼리를 적용시킬 경우 컨텐츠의 폭보다 적게 세팅되서    
 모바일 최적화가 일어나지 않는 것을 알게 됬습니다.
