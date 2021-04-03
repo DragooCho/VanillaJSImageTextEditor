@@ -70,7 +70,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 <br />
 
-## 7. ver 2.5 변경점 🛠
+## 7. ver 2.5 개선된 점 🛠
 
 1. 세로보기에 최적화한 홈페이지 디자인을 **가로 중심의 디자인**으로 변경했습니다.
    <br />
@@ -99,7 +99,57 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
   ```
 <br />
 
-4. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
+4. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
+   X축, Y축, 문단, Text Size, Text Color 등등 대부분 전역변수화 시켰습니다.    
+   
+  ```js
+   const manualTextAllX = 30;
+   const manualTextAllY = 0;
+   const smallParagraphSpacing = -5;
+   const manualTextSize = 20;
+   const manualTextColor = "rgba(0, 0, 0)";
+   
+   const manualTextLine1 = "1. 문구에 텍스트를 작성하세요.";
+   
+   const manualTextLine2N1 = "2. 폰트타입, 글씨색, 글씨 크기 등의 옵션으로";
+   const manualTextLine2N2 = "원하는 수치를 조절하세요.";
+   
+   const manualTextLine3N1 = "3. 텍스트를 붙일 곳에 마우스를 클릭하시고";
+   const manualTextLine3N2 = "원하는 수치가 나오는지 테스트 해보세요.";
+   
+   const manualTextLine4 = "4. '파일선택' 버튼을 눌러 이미지를 업로드 하세요.";
+   
+   const manualTextLine5N1 = "5. 텍스트를 원하는 위치에 마우스 클릭하시고";
+   const manualTextLine5N2 = "'이미지로 가져오기' 버튼을 눌러 저장하세요.";
+   
+   ctx.fillStyle = manualTextColor;
+   ctx.font = `800 ${manualTextSize}px NOMAL`;
+   
+   ctx.fillText(manualTextLine1, 20 + manualTextAllX, 100 + manualTextAllY);
+   
+   ctx.fillText(manualTextLine2N1, 20 + manualTextAllX, 160 + manualTextAllY);
+   ctx.fillText(
+     manualTextLine2N2,
+     46 + manualTextAllX,
+     200 + manualTextAllY + smallParagraphSpacing
+   );
+   ctx.fillText(manualTextLine3N1, 20 + manualTextAllX, 260 + manualTextAllY);
+   ctx.fillText(
+     manualTextLine3N2,
+     46 + manualTextAllX,
+     300 + manualTextAllY + smallParagraphSpacing
+   );
+   ctx.fillText(manualTextLine4, 20 + manualTextAllX, 360 + manualTextAllY);
+   ctx.fillText(manualTextLine5N1, 20 + manualTextAllX, 420 + manualTextAllY);
+   ctx.fillText(
+     manualTextLine5N2,
+     40 + manualTextAllX,
+     460 + manualTextAllY + smallParagraphSpacing
+   );
+``` 
+
+
+5. 이미지 폭의 **백분율 계산**을 이용해 대입한 결과 이미지 파일을 업로드시에  
    **원본의 비율을 유지**하면서 가져올 수 있게 했습니다. 이로서 지나치게     
    큰 이미지파일을 불려올 때 매뉴조작박스가 **구석으로 가거나 사라지는 현상을 방지**했습니다. 
    ``` js
