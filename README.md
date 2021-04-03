@@ -78,9 +78,10 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 2. 라이브러리 없는 순수 자바스크립트로 구현해 웹페이지 성능을 좀 더 향상화 했습니다.
    <br />
         
-3. 유지보수를 간편화를 위해 **JS파일과 css파일들을 조작 기능별로 나누어 컴포넌트화** 했습니다.
-  ```
-  File Tree
+3. 유지보수를 간편화를 위해 **JS파일과 css파일들을 조작 기능별로    
+   나누어 컴포넌트화** 했습니다.    
+   ```
+   File Tree
   
    📂css
    ┣ 📜aside.css
@@ -96,10 +97,10 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    ┣ 📜text input window.js
    ┣ 📜TextColorSelecter.js
    ┗ 📜textSizeHandler.js 
-  ```
+    ```
 <br />
 
-4. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
+1. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
    X축, Y축, 문단, Text Size, Text Color 등등 대부분 전역변수화 시켰습니다.
 
    ```js
@@ -214,7 +215,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 
 <br />
 
-8. 대부분의 모바일 기기에서도 조작을 용이하게 하기 위해   
+8. 대부분의 모바일 기기에서도 사용자 경험을 비슷하게 하기 위해   
  웹반응형을 적용시켰습니다. width 수치가 980px보다 적게   
 미디어쿼리를 적용시킬 경우 컨텐츠의 폭보다 적게 세팅되서    
 모바일 최적화가 일어나지 않는 것을 알게 됬습니다.
