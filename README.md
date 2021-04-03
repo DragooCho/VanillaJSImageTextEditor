@@ -100,7 +100,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
     ```
 <br />
 
-1. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
+4. 캠퍼스내의 메뉴얼 텍스트를 향후 변경하기 용의하게 하기 위해    
    X축, Y축, 문단, Text Size, Text Color 등등 대부분 전역변수화 시켰습니다.
 
    ```js
