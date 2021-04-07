@@ -16,7 +16,7 @@
 ## 2. 사용 기술 📱
 #### `Front-end`
   - **javascript** 
-  - **HML5canvas**
+  - **HTML5canvas**
 
 <br />
 
