@@ -14,9 +14,13 @@ function imageInputUpload(e) {
       img.height = 600 * ((imgY * 100) / imgX / 100);
       img.width = 600;
 
+      bgCanvas.width = img.width;
+      bgCanvas.height = img.height;
+
       canvas.width = img.width;
       canvas.height = img.height;
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+      bgCtx.drawImage(img, 0, 0, bgCanvas.width, bgCanvas.height);
     };
     img.src = event.target.result;
   };

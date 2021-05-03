@@ -1,5 +1,5 @@
 const createDownloadImg = () => {
-  let dataURL = canvas.toDataURL("image/png");
+  let dataURL = bgCanvas.toDataURL("image/png");
   dataURL = dataURL.replace(
     /^data:image\/[^;]*/,
     "data:application/octet-stream"

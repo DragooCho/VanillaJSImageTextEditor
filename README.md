@@ -1,4 +1,4 @@
-# 🔹웹툴🔹 이미지 텍스트 편집기 ver 2.5
+# 🔹웹툴🔹 이미지 텍스트 편집기 ver 3.0
 
 
 ![Image Text Editor](https://github.com/DragooCho/TIL/blob/main/image/jjalbang18.gif?raw=true)
@@ -71,7 +71,11 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 <br />
 
-## 7. ver 2.5 개선된 점 🛠
+## 7. ver 2.5 업데이트 🛠
+
+<details>
+<summary>ver 2.5 개선된 점 (클릭하면 내용이 펼쳐집니다.) </summary>
+<div markdown="1"> 
 
 1. 세로보기에 최적화한 홈페이지 디자인을 **가로 중심의 디자인**으로 변경했습니다.
    <br />
@@ -220,9 +224,16 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 컨텐츠의 폭보다 적게 세팅되서 컨텐츠들이 세로 정렬을 안하는   
 현상을 발견하고 그것에 주의하면서 웹반응형을 적용시켰습니다.
 
+</div>
+</details>
 
+<br />
+<br />
 
+## 7. ver 3.0 업데이트 🛠
 
+1. 텍스트 레이어를 따로 추가해 원하는 크기와    
+위치를 좀 더 정확하게 그려내기 편해졌습니다. 
  
 
  

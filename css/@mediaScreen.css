@@ -1,9 +1,19 @@
 @media screen and (max-width: 1025px) {
   .appBox {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px repeat(2, 1fr);
+    grid-template-areas:
+      "header"
+      "canvas"
+      "aside";
+
+    gap: 20px;
   }
-  .canvas {
+
+  header {
+    grid-area: header;
+  }
+
+  canvas {
+    grid-area: canvas;
     justify-self: center;
   }
   aside {
@@ -12,6 +22,7 @@
   }
 
   .operation_container {
+    grid-area: aside;
     justify-self: center;
   }
 }
@@ -31,7 +42,7 @@
   header {
     grid-area: header;
   }
-  .canvas {
+  canvas {
     grid-area: canvas;
     justify-self: end;
   }

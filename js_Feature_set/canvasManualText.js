@@ -17,26 +17,26 @@ const manualTextLine4 = "4. '파일선택' 버튼을 눌러 이미지를 업로�
 const manualTextLine5N1 = "5. 텍스트를 원하는 위치에 마우스 클릭하시고";
 const manualTextLine5N2 = "'이미지로 가져오기' 버튼을 눌러 저장하세요.";
 
-ctx.fillStyle = manualTextColor;
-ctx.font = `800 ${manualTextSize}px NOMAL`;
+bgCtx.fillStyle = manualTextColor;
+bgCtx.font = `800 ${manualTextSize}px NOMAL`;
 
-ctx.fillText(manualTextLine1, 20 + manualTextAllX, 100 + manualTextAllY);
+bgCtx.fillText(manualTextLine1, 20 + manualTextAllX, 100 + manualTextAllY);
 
-ctx.fillText(manualTextLine2N1, 20 + manualTextAllX, 160 + manualTextAllY);
-ctx.fillText(
+bgCtx.fillText(manualTextLine2N1, 20 + manualTextAllX, 160 + manualTextAllY);
+bgCtx.fillText(
   manualTextLine2N2,
   46 + manualTextAllX,
   200 + manualTextAllY + smallParagraphSpacing
 );
-ctx.fillText(manualTextLine3N1, 20 + manualTextAllX, 260 + manualTextAllY);
-ctx.fillText(
+bgCtx.fillText(manualTextLine3N1, 20 + manualTextAllX, 260 + manualTextAllY);
+bgCtx.fillText(
   manualTextLine3N2,
   46 + manualTextAllX,
   300 + manualTextAllY + smallParagraphSpacing
 );
-ctx.fillText(manualTextLine4, 20 + manualTextAllX, 360 + manualTextAllY);
-ctx.fillText(manualTextLine5N1, 20 + manualTextAllX, 420 + manualTextAllY);
-ctx.fillText(
+bgCtx.fillText(manualTextLine4, 20 + manualTextAllX, 360 + manualTextAllY);
+bgCtx.fillText(manualTextLine5N1, 20 + manualTextAllX, 420 + manualTextAllY);
+bgCtx.fillText(
   manualTextLine5N2,
   40 + manualTextAllX,
   460 + manualTextAllY + smallParagraphSpacing

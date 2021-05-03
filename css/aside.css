@@ -48,6 +48,19 @@ aside #optionSelectFont :nth-child(7) {
   font-weight: normal;
 }
 
+aside #textInputValue {
+  width: 250px;
+  height: 20px;
+}
+
+aside #optionSelectFont,
+aside #selectTextColor {
+  width: 250px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 aside .btnManualTitle {
   font-size: 20px;
 }
