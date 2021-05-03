@@ -5,7 +5,7 @@ const bgCanvas = document.querySelector(".canvas2");
 const bgCtx = bgCanvas.getContext("2d");
 
 canvas.addEventListener("mousemove", mouseMoveHandler, false);
-canvas.addEventListener("mousedown", mouseDownHandler, false);
+canvas.addEventListener("mouseup", mouseUpHandler, false);
 canvas.addEventListener("mouseout", mouseOutHandler, false);
 
 function mouseMoveHandler(e) {
@@ -17,7 +17,7 @@ function mouseMoveHandler(e) {
   ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
 }
 
-function mouseDownHandler(e) {
+function mouseUpHandler(e) {
   bgCtx.fillStyle = `${textColorValue}`;
   bgCtx.textAlign = "center";
   bgCtx.textBaseline = "middle";
