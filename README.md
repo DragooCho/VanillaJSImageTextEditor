@@ -52,7 +52,7 @@
   <br />
 
 - 다운로드 버튼에 `addEventListener` 의 속성을 쓰면 에러가 일어났기에   
-  대신 `html`의 `onclick` 속성을 이용했었습니다. 당시엔 원인을 알 수 없었으나
+  대신 `html`의 `onclick` 속성을 이용했었습니다. 당시엔 원인을 알 수 없었으나       
   그 후  `addEventListener` 에 `click` 이란 속성으로 오류을 해결했습니다. 
   <br />
          
