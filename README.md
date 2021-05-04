@@ -233,7 +233,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 <br />
 
-## 7. ver 3.0 업데이트 🛠
+## 8. ver 3.0 업데이트 🛠
 
 1. 텍스트 레이어를 따로 추가해 원하는 크기와    
 위치를 좀 더 정확하게 그려내기 편해졌습니다. 
