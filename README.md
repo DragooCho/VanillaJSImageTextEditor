@@ -134,27 +134,11 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    ctx.fillStyle = manualTextColor;
    ctx.font = `800 ${manualTextSize}px NOMAL`;
    
-   ctx.fillText(manualTextLine1, 20 + manualTextAllX, 100 + manualTextAllY);
-   
-   ctx.fillText(manualTextLine2N1, 20 + manualTextAllX, 160 + manualTextAllY);
-   ctx.fillText(
-     manualTextLine2N2,
-     46 + manualTextAllX,
-     200 + manualTextAllY + smallParagraphSpacing
-   );
-   ctx.fillText(manualTextLine3N1, 20 + manualTextAllX, 260 + manualTextAllY);
-   ctx.fillText(
-     manualTextLine3N2,
-     46 + manualTextAllX,
-     300 + manualTextAllY + smallParagraphSpacing
-   );
-   ctx.fillText(manualTextLine4, 20 + manualTextAllX, 360 + manualTextAllY);
-   ctx.fillText(manualTextLine5N1, 20 + manualTextAllX, 420 + manualTextAllY);
-   ctx.fillText(
-     manualTextLine5N2,
-     40 + manualTextAllX,
-     460 + manualTextAllY + smallParagraphSpacing
-   );
+   .
+   .
+   .
+   .
+
 
    ``` 
 <br />
@@ -185,7 +169,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 
 6. font-display: `swap` 속성을 추가해 웹페이지 내에서   
-   웹 폰트 로딩 여부와 관계없이 항상 텍스트가 보이게 했습니다. 
+   웹 폰트 로딩이 실패하면 기본 텍스트가 보이게 했습니다. 
    ``` css
    // fontFace.css
    
@@ -224,7 +208,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
 <br />
 
 8. width 수치가 980px보다 적게 미디어쿼리를 적용시킬 경우  
-컨텐츠의 폭보다 적게 세팅되서 컨텐츠들이 세로 정렬을 안하는   
+컨텐츠의 폭보다 적게 세팅되서 컨텐츠들이 세로 정렬이 되지 않는   
 현상을 발견하고 그것에 주의하면서 웹반응형을 적용시켰습니다.
 
 </div>
