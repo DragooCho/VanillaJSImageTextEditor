@@ -1,72 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-      <meta charset="UTF-8">
-      <title>Image Text Editor</title>
-    </head>
-    <body> 
-      <div class='appBox'>
-        <header>
-          <h1>🔹웹툴🔹이미지 텍스트 편집기 ver3️⃣▪0️⃣</h1>
-        </header>
-        
-        <canvas id="jsCanvas" class="canvas" width='600' height='734' style="z-index: 1;"></canvas>
-        <canvas id="jsCanvas2" class="canvas2" width='600' height='734' style="z-index: 0;"></canvas>
-       
-        <container class="operation_container">
-          <form>
-            <aside>
-              <h2>문구</h2>
-              <input type="text" id="textInputValue" />
-            </aside>
-            <aside>
-              <h2>파일 불러오기</h2>
-              <input type="file" id="fileInputBtn" name="imageInputUpload" accept="image/*">
-            </aside>
-            <aside>
-              <h2>폰트</h2>
-              <select id="optionSelectFont">
-                <option value="Eulyoo1945-Regular">을유1945 SemiBold </option>
-                <option value="BMEuljiro10yearslater">배민 을지로10년후체</option>
-                <option value="SDSamliphopangche_Outline">산돌 삼립호빵체 Outline</option>
-                <option value="SDSamliphopangche_Basic" selected>산돌 삼립호빵체 Basic</option>
-                <option value="LAB디지털">LAB디지털</option>
-                <option value="ELAND_Choice_B">이랜드 초이스체 B</option>
-                <option value="ELAND_Nice_M">이랜드 나이스체</option>
-              </select>
-            </aside>
-            <aside>
-              <h2>글씨색</h2>
-              <select id="selectTextColor">
-                <option value="black" selected>검정</option>
-                <option value="white">흰색</option>
-                <option value="pink">분홍</option>
-                <option value="blue">파랑</option>
-              </select>
-            </aside>
-            <aside>
-              <div class="slidecontainer">
-                <h2>글씨크기 <span id="sizeValueTachometer"></span> PX</h2>
-                <input type="range" min="10" max="100" value="20" class="slider" id="myRange">
-              </div>
-            </aside>
-            <aside>
-              <h2 class='btnManualTitle'>문구 위치를 마우스클릭으로</h2> 
-              <h2 class='btnManualTitle'>조정할 수 있어요!</h2>
-              <button class="clickCreateImg">이미지로 가져오기</button>
-            </aside>
-          </form>
-        </container>  
-      </div> 
-      <script src="js_Feature_set/canvasMain.js"></script>
-      <script src="js_Feature_set/canvasManualText.js"></script>
-      <script src="js_Feature_set/textInputWindow.js"></script>
-      <script src="js_Feature_set/ImageUploadZone.js"></script>
-      <script src="js_Feature_set/FontTypeSelecter.js"></script>
-      <script src="js_Feature_set/TextColorSelecter.js"></script>
-      <script src="js_Feature_set/textSizeHandler.js"></script>
-      <script src="js_Feature_set/ImgDownloader.js"></script>
-      <script id="_waumis">var _wau = _wau || []; _wau.push(["tab", "yx5tikn4n0", "mis", "right-upper"]);</script><script async src="//waust.at/t.js"></script>
-    </body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <title>Image Text Editor</title>
+  </head>
+  <body>
+    <div class="appBox">
+      <header>
+        <h1>🔹웹툴🔹이미지 텍스트 편집기 ver3️⃣▪0️⃣</h1>
+      </header>
+
+      <canvas
+        id="jsCanvas"
+        class="canvas"
+        width="600"
+        height="734"
+        style="z-index: 1"
+      ></canvas>
+      <canvas
+        id="jsCanvas2"
+        class="canvas2"
+        width="600"
+        height="734"
+        style="z-index: 0"
+      ></canvas>
+
+      <container class="operation_container">
+        <form>
+          <aside>
+            <h2>문구</h2>
+            <input type="text" id="textInputValue" />
+          </aside>
+
+          <aside>
+            <h2>파일 불러오기</h2>
+            <input
+              type="file"
+              id="fileInputBtn"
+              name="imageInputUpload"
+              accept="image/*"
+            />
+          </aside>
+
+          <aside>
+            <h2>폰트</h2>
+            <select id="optionSelectFont">
+              <option value="Eulyoo1945-Regular">을유1945 SemiBold</option>
+              <option value="BMEuljiro10yearslater">배민 을지로10년후체</option>
+              <option value="SDSamliphopangche_Outline">
+                산돌 삼립호빵체 Outline
+              </option>
+              <option value="SDSamliphopangche_Basic" selected>
+                산돌 삼립호빵체 Basic
+              </option>
+              <option value="LAB디지털">LAB디지털</option>
+              <option value="ELAND_Choice_B">이랜드 초이스체 B</option>
+              <option value="ELAND_Nice_M">이랜드 나이스체</option>
+            </select>
+          </aside>
+
+          <aside>
+            <h2>글씨색</h2>
+            <select id="selectTextColor">
+              <option value="black" selected>검정</option>
+              <option value="white">흰색</option>
+              <option value="pink">분홍</option>
+              <option value="blue">파랑</option>
+            </select>
+          </aside>
+
+          <aside>
+            <div class="slidecontainer">
+              <h2>글씨크기 <span id="sizeValueTachometer"></span> PX</h2>
+              <input
+                type="range"
+                min="10"
+                max="100"
+                value="20"
+                class="slider"
+                id="myRange"
+              />
+            </div>
+          </aside>
+
+          <aside>
+            <h2 class="btnManualTitle">문구 위치를 마우스클릭으로</h2>
+            <h2 class="btnManualTitle">조정할 수 있어요!</h2>
+            <button class="clickCreateImg">이미지로 가져오기</button>
+          </aside>
+        </form>
+      </container>
+    </div>
+    <script src="js_Feature_set/canvasMain.js"></script>
+    <script src="js_Feature_set/canvasManualText.js"></script>
+    <script src="js_Feature_set/textInputWindow.js"></script>
+    <script src="js_Feature_set/ImageUploadZone.js"></script>
+    <script src="js_Feature_set/FontTypeSelecter.js"></script>
+    <script src="js_Feature_set/TextColorSelecter.js"></script>
+    <script src="js_Feature_set/textSizeHandler.js"></script>
+    <script src="js_Feature_set/ImgDownloader.js"></script>
+    <script id="_waumis">
+      var _wau = _wau || [];
+      _wau.push(["tab", "yx5tikn4n0", "mis", "right-upper"]);
+    </script>
+    <script async src="//waust.at/t.js"></script>
+  </body>
 </html>

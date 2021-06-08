@@ -7,7 +7,6 @@ function imageInputUpload(e) {
 
   reader.onload = function (event) {
     img.onload = function () {
-      // 이미지 로딩이 완료되면 실행되는 함수
       imgX = img.width;
       imgY = img.height;
 
