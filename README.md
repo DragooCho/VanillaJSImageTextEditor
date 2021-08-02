@@ -8,7 +8,12 @@ https://github.com/DragooCho/ImageTextEditor
  
 <br /><br />
  
+ ## p5js 라이브어리를 사용한 웹페이지 속도측정
+ 
  ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_028.png)
+ 
+ ## 순수 js에 CANVAS-API를 활용한 웹페이지 속도측정
+ 
  ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_029.png)
  
  [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=ko) 사이트에서 웹페이지 로딩속도를 측정한 결과 6초 정도 로딩을 단축했으며 점수는 50여점 더 상승해 85점을 기록했습니다.
