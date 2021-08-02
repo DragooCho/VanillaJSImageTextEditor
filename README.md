@@ -3,10 +3,17 @@
 
 ![Image Text Editor](https://github.com/DragooCho/TIL/blob/main/image/jjalbang18.gif?raw=true)
 
->https://github.com/DragooCho/ImageTextEditor        
- p5js로 구현했던 **이미지 텍스트 편집기**를 순수 자바스크립트로 재구현 했습니다.
+https://github.com/DragooCho/ImageTextEditor        
+ 기존 **이미지 텍스트 편집기**의 느린 로딩속도를 개선하고자 p5js 라이브러리를 제외시키고 순수 자바스크립트로 재구현 했습니다.
+ 
+<br /><br />
+ 
+ ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_028.png)
+ ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_029.png)
+ 
+ [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?hl=ko) 사이트에서 웹페이지 로딩속도를 측정한 결과 6초 정도 로딩을 단축했으며 점수는 50여점 더 상승해 85점을 기록했습니다.
 
-<br />
+ <br /><br />
 
 ## 1. 제작 기간 & 참여 인원 👨‍🔧🕑
 - 2021년 3월 15일 ~ 3월 18일
