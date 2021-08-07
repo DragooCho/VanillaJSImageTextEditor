@@ -8,11 +8,11 @@ https://github.com/DragooCho/ImageTextEditor
  
 <br /><br />
  
- ## p5js 라이브어리를 사용한 웹페이지 속도측정
+ ## p5js 라이브러리를 사용한 웹페이지의 속도측정
  
  ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_028.png)
  
- ## 순수 js에 CANVAS-API를 활용한 웹페이지 속도측정
+ ## 순수 js에 CANVAS-API를 활용한 웹페이지의 속도측정
  
  ![PageSpeed Insights](https://raw.githubusercontent.com/DragooCho/TIL/62ebd820cc3ff55bc6911bc2dada262629e29331/image/image_029.png)
  
