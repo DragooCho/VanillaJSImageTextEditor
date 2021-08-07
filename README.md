@@ -99,7 +99,7 @@ https://dragoocho.github.io/VanillaJSImageTextEditor/
    <br />
         
 3. 유지보수를 간편화를 위해 **JS파일과 css파일들을 조작 기능별로    
-   나누어 컴포넌트화** 했습니다.    
+   모듈화** 했습니다.    
    ```
    File Tree
   
