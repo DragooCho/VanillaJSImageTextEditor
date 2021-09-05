@@ -32,9 +32,11 @@ header h1 {
   border-radius: 10px;
   border: 1px solid rgba(78, 78, 78, 0.479);
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  z-index: 0;
 }
 .canvas {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
   cursor: pointer;
+  z-index: 1;
 }
