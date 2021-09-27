@@ -11,7 +11,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
     "Eulyoo1945-Regular", "SDSamliphopangche_Outline";
-  z-index: 1;
 }
 
 .appBox {
@@ -42,12 +41,41 @@ header h1 {
   z-index: 3;
 }
 
-/* #modal {
-  position: absolute;
-  background-color: rgb(74, 103, 196);
-  width: 200px;
+#modal {
+  background-color: rgba(73, 81, 107, 0.74);
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  width: 400px;
   height: 200px;
-
+  top: calc(-179% - 200px);
+  left: calc(88% - 200px);
+  border-radius: 1rem;
   cursor: pointer;
   z-index: 4;
-} */
+}
+
+.modal_BG {
+  background-image: linear-gradient(
+      rgba(131, 131, 131, 0.8),
+      rgba(131, 131, 131, 0.8)
+    ),
+    url("https://source.unsplash.com/1600x900/?cat");
+}
+
+#modal button {
+  font-family: "SDSamliphopangche_Basic";
+  font-size: 1.5em;
+  border-radius: 0.5em;
+  width: 10vh;
+  height: 5vh;
+  cursor: pointer;
+}
+#modal p {
+  color: #f6f9fc;
+  font-family: "SDSamliphopangche_Outline";
+  font-size: 1.5em;
+}

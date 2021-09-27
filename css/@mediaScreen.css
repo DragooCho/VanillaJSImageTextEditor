@@ -3,7 +3,8 @@
     grid-template-areas:
       "header"
       "canvas"
-      "aside";
+      "aside"
+      "modal";
 
     gap: 20px;
   }
@@ -25,13 +26,19 @@
     grid-area: aside;
     justify-self: center;
   }
+  #modal {
+    grid-area: modal;
+    left: calc(50% - 200px);
+    top: calc(-600% - 100px);
+  }
 }
 
 @media screen and (min-width: 1026px) {
   .appBox {
     grid-template-areas:
       "header header"
-      "canvas aside";
+      "canvas aside"
+      "modal aside";
 
     gap: 20px;
   }
@@ -49,5 +56,10 @@
   aside {
     width: 300px;
     height: 80px;
+  }
+  #modal {
+    grid-area: modal;
+    left: calc(85% - 200px);
+    top: calc(-200% - 100px);
   }
 }

@@ -13,17 +13,15 @@ function imageInputUpload(e) {
       img.height = 600 * ((imgY * 100) / imgX / 100);
       img.width = 600;
 
-      bgCanvas.width = img.width;
-      bgCanvas.height = img.height;
-
-      canvas.width = img.width;
-      canvas.height = img.height;
+      [bgCanvas.width, bgCanvas.height] = [img.width, img.height];
+      [canvas.width, canvas.height] = [img.width, img.height];
 
       bgCtx.drawImage(img, 0, 0, bgCanvas.width, bgCanvas.height);
     };
     img.src = event.target.result;
 
-    fileCheckingWarning("image", img);
+    // fileCheckingWarning("image", img);
+    fileCheckingWarning(img);
   };
   reader.readAsDataURL(e.target.files[0]);
 }
