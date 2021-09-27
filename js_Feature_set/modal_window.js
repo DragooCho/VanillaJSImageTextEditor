@@ -5,3 +5,5 @@ const fileCheckingWarning = (file, flieSrc) => {
     alert(`${file} 파일형식으로 넣어주세요!!!`);
   }
 };
+
+//
