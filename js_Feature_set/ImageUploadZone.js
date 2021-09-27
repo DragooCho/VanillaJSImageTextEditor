@@ -21,6 +21,7 @@ function imageInputUpload(e) {
     img.src = event.target.result;
 
     // fileCheckingWarning("image", img);
+
     fileCheckingWarning(img);
   };
   reader.readAsDataURL(e.target.files[0]);

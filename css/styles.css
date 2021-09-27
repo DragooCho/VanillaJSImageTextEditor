@@ -41,18 +41,17 @@ header h1 {
   z-index: 3;
 }
 
-#modal {
-  background-color: rgba(73, 81, 107, 0.74);
-  /* display: flex; */
+.modal {
   display: none;
+  background-color: rgba(73, 81, 107, 0.74);
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  position: relative;
+  position: absolute;
   width: 400px;
   height: 200px;
-  top: calc(-179% - 200px);
-  left: calc(88% - 200px);
+  top: calc(50% - 100px);
+  left: calc(50% - 200px);
   border-radius: 1rem;
   cursor: pointer;
   z-index: 4;
@@ -66,7 +65,7 @@ header h1 {
     url("https://source.unsplash.com/1600x900/?cat");
 }
 
-#modal button {
+.modal button {
   font-family: "SDSamliphopangche_Basic";
   font-size: 1.5em;
   border-radius: 0.5em;
@@ -74,7 +73,7 @@ header h1 {
   height: 5vh;
   cursor: pointer;
 }
-#modal p {
+.modal p {
   color: #f6f9fc;
   font-family: "SDSamliphopangche_Outline";
   font-size: 1.5em;
