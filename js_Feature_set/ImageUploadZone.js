@@ -1,13 +1,6 @@
 const fileInputBtn = document.getElementById("fileInputBtn");
 fileInputBtn.addEventListener("change", imageInputUpload);
 
-const fileCheckingWarning = (file, flieSrc) => {
-  const fileFormat = flieSrc.src.split("/")[0].split(":")[1];
-  if (fileFormat !== `${file}`) {
-    alert(`${file} 파일형식으로 넣어주세요!!!`);
-  }
-};
-
 function imageInputUpload(e) {
   let reader = new FileReader();
   let img = new Image();
