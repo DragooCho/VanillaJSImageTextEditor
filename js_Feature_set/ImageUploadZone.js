@@ -1,26 +1,30 @@
 const fileInputBtn = document.getElementById("fileInputBtn");
 fileInputBtn.addEventListener("change", imageInputUpload);
 
+const resizeVertically = (img, canvasY) => {
+  img.height = canvasY * ((img.height * 100) / img.width / 100);
+  img.width = canvasY;
+  return img.height, img.width;
+};
+
 function imageInputUpload(e) {
   let reader = new FileReader();
   let img = new Image();
 
   reader.onload = function (event) {
     img.onload = function () {
-      const imgX = img.width;
-      const imgY = img.height;
+      resizeVertically(img, canvas.width);
 
-      img.height = 600 * ((imgY * 100) / imgX / 100);
-      img.width = 600;
-
-      [bgCanvas.width, bgCanvas.height] = [img.width, img.height];
-      [canvas.width, canvas.height] = [img.width, img.height];
+      [bgCanvas.width, bgCanvas.height, canvas.width, canvas.height] = [
+        img.width,
+        img.height,
+        img.width,
+        img.height,
+      ];
 
       bgCtx.drawImage(img, 0, 0, bgCanvas.width, bgCanvas.height);
     };
     img.src = event.target.result;
-
-    // fileCheckingWarning("image", img);
 
     fileCheckingWarning(img);
   };
