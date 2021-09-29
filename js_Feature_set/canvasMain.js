@@ -8,23 +8,23 @@ canvas.addEventListener("mousemove", mouseMoveHandler, false);
 canvas.addEventListener("mouseup", mouseUpHandler, false);
 canvas.addEventListener("mouseout", mouseOutHandler, false);
 
+function printingText(e, whatCanvas, nX, nY) {
+  whatCanvas.fillStyle = `${textColorValue}`;
+  whatCanvas.textAlign = "center";
+  whatCanvas.textBaseline = "middle";
+  whatCanvas.font = `${textSizeValue}px ${fontStyleValue}`;
+  whatCanvas.fillText(textInputValue.value, e.offsetX + nX, e.offsetY + nY);
+}
+
 function mouseMoveHandler(e) {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = `${textColorValue}`;
-  ctx.textAlign = "center";
-  ctx.textBaseline = "middle";
-  ctx.font = `${textSizeValue}px ${fontStyleValue}`;
-  ctx.fillText(textInputValue.value, e.offsetX, e.offsetY);
+  mouseOutHandler();
+  printingText(e, ctx, txtPrintFineTuningX, txtPrintFineTuningY);
 }
 
 function mouseUpHandler(e) {
-  bgCtx.fillStyle = `${textColorValue}`;
-  bgCtx.textAlign = "center";
-  bgCtx.textBaseline = "middle";
-  bgCtx.font = `${textSizeValue}px ${fontStyleValue}`;
-  bgCtx.fillText(textInputValue.value, e.offsetX, e.offsetY);
+  printingText(e, bgCtx, 0, 0);
 }
 
-function mouseOutHandler(e) {
+function mouseOutHandler() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }

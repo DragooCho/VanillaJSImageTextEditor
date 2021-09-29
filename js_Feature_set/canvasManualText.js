@@ -1,9 +1,3 @@
-const manualTextAllX = 30;
-const manualTextAllY = 0;
-const smallParagraphSpacing = -5;
-const manualTextSize = 20;
-const manualTextColor = "rgba(0, 0, 0)";
-
 const manualTextLine1 = "1. 문구에 텍스트를 작성하세요.";
 
 const manualTextLine2N1 = "2. 폰트타입, 글씨색, 글씨 크기 등의 옵션으로";
