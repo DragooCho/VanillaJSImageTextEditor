@@ -59,10 +59,13 @@ aside #textInputValue {
 
 aside #optionSelectFont,
 aside #selectTextColor {
-  width: 250px;
+  width: 186px;
   height: 30px;
   cursor: pointer;
   font-size: 20px;
+}
+aside #optionSelectFont {
+  width: 240px;
 }
 
 aside .btnManualTitle {
