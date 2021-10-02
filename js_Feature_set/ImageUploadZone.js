@@ -11,8 +11,8 @@ function imageInputUpload(e) {
   let reader = new FileReader();
   let img = new Image();
 
-  reader.onload = function (event) {
-    img.onload = function () {
+  reader.onload = (event) => {
+    img.onload = () => {
       resizeVertically(img, canvas.width);
 
       [bgCanvas.width, bgCanvas.height, canvas.width, canvas.height] = [
@@ -28,5 +28,6 @@ function imageInputUpload(e) {
 
     fileCheckingWarning(img);
   };
+
   reader.readAsDataURL(e.target.files[0]);
 }
