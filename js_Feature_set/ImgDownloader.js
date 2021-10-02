@@ -16,5 +16,6 @@ function createDownloadImg() {
   const ATagImage = document.createElement("a");
   ATagImage.download = "canvasImage.png";
   ATagImage.href = dataURL;
+  ATagImage.style.opacity = "0.5";
   ATagImage.click();
 }

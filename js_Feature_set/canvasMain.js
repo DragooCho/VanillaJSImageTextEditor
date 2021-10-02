@@ -14,6 +14,9 @@ function printingText(e, whatCanvas, nX, nY) {
   whatCanvas.textBaseline = "middle";
   whatCanvas.font = `${textSizeValue}px ${fontStyleValue}`;
   whatCanvas.fillText(textInputValue.value, e.offsetX + nX, e.offsetY + nY);
+
+  // whatCanvas.fillStyle = `rgba(0, 0, 0, 0.2)`;
+  // whatCanvas.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
 }
 
 function mouseMoveHandler(e) {

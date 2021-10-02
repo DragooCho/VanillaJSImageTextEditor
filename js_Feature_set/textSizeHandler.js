@@ -4,7 +4,6 @@ let textSizeValue = textSizeSlider.value;
 Tachometer.innerHTML = textSizeValue;
 
 textSizeSlider.addEventListener("input", (event) => {
-  console.log(this);
   Tachometer.innerHTML = event.target.value;
   textSizeValue = event.target.value;
 });

@@ -1,0 +1,32 @@
+.brightManualSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imageBrightSliderZone {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* width: 180px; */
+}
+.imageBrightSliderZone li {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.brightManualTitle {
+  font-size: 1.5rem;
+}
+
+.imageBrightSliderZone input {
+  width: 74px;
+}
+
+.brightManualSection button {
+  width: 81px;
+  height: 45px;
+}

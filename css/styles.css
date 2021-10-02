@@ -2,6 +2,8 @@
 @import "reset.css";
 @import "aside.css";
 @import "@mediaScreen.css";
+@import "modalWindow.css";
+@import "brightManualTitle.css";
 
 body {
   background-color: #f6f9fc;
@@ -39,42 +41,4 @@ header h1 {
   border-radius: 10px;
   cursor: pointer;
   z-index: 3;
-}
-
-.modal {
-  display: none;
-  background-color: rgba(73, 81, 107, 0.74);
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: absolute;
-  width: 400px;
-  height: 200px;
-  top: calc(50% - 100px);
-  left: calc(50% - 200px);
-  border-radius: 1rem;
-  cursor: pointer;
-  z-index: 4;
-}
-
-.modal_BG {
-  background-image: linear-gradient(
-      rgba(131, 131, 131, 0.8),
-      rgba(131, 131, 131, 0.8)
-    ),
-    url("https://source.unsplash.com/1600x900/?cat");
-}
-
-.modal button {
-  font-family: "SDSamliphopangche_Basic";
-  font-size: 1.5em;
-  border-radius: 0.5em;
-  width: 10vh;
-  height: 5vh;
-  cursor: pointer;
-}
-.modal p {
-  color: #f6f9fc;
-  font-family: "SDSamliphopangche_Outline";
-  font-size: 1.5em;
 }
