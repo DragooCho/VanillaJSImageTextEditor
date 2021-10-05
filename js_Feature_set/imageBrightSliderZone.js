@@ -34,6 +34,3 @@ function brightSlideChange(event) {
   let braVal = brSliderVal.padStart(3, "0");
   brightText.innerHTML = braVal;
 }
-
-// whatCanvas.fillStyle = `rgba(0, 0, 0, 0.2)`;
-// whatCanvas.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
