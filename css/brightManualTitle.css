@@ -1,7 +1,7 @@
 .brightManualSection {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .imageBrightSliderZone {
@@ -15,7 +15,12 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  width: 180px;
+  width: 210px;
+}
+
+.bright_value_font {
+  position: relative;
+  left: 6px;
 }
 
 .brightManualTitle {
@@ -27,6 +32,6 @@
 }
 
 .brightManualSection button {
-  width: 81px;
+  width: 61px;
   height: 45px;
 }
