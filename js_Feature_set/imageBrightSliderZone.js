@@ -15,15 +15,11 @@ brightSlider.addEventListener("input", brightSlideChange, false);
 
 function createPutBright() {
   bgCtx.fillStyle = `rgba(${brSliderVal}, ${brSliderVal}, ${brSliderVal}, ${opSliderVal})`;
-  // bgCtx.fillStyle = "rgba(0, 0, 0, 0.5)";
-  // bgCtx.fillStyle = "rgba(255, 255, 255, 0.1)";
   bgCtx.fillRect(0, 0, bgCanvas.width, bgCanvas.height);
 }
 
 function opacitySlideChange(event) {
-  opSliderVal = event.target.value;
-  let opVal = opSliderVal;
-  console.log(opVal);
+  let opVal = event.target.value;
   if (opVal === 1 || opVal === 0) {
     let changeVal = opVal.toFixed(5);
     opacityText.innerText = changeVal;
